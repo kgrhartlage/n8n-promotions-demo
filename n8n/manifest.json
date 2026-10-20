@@ -1,28 +1,28 @@
 {
 	"packageFormatVersion": "1",
-	"exportedAt": "2026-10-20T09:00:25.647Z",
-	"sourceN8nVersion": "2.44.0",
+	"exportedAt": "2026-10-20T13:08:06.420Z",
+	"sourceN8nVersion": "2.45.0",
 	"sourceId": "0b5cc27b60389d2bf8c53ebeacff83a3ac0c80b5fb13f8934a59d5aea5665f03",
 	"workflows": [
+		{
+			"id": "14lqkKd6r3Gflsoo",
+			"name": "Move me",
+			"target": "projects/other-team-AJpnCLiggWvEgZXR/workflows/move-me-14lqkKd6r3Gflsoo"
+		},
 		{
 			"id": "0YL553VNheUfpnxq",
 			"name": "Invoice reconciliation",
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/folders/billing-3REU6mYE8CC0a5ch/workflows/invoice-reconciliation-0YL553VNheUfpnxq"
 		},
 		{
-			"id": "6pEOP3fSgzMBMFAU",
-			"name": "Normalize invoice",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/normalize-invoice-6pEOP3fSgzMBMFAU"
+			"id": "r86wJKwFoc8ZVhQX",
+			"name": "Payout audit",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/folders/payouts-YsagmLpnqdWqhvTr/workflows/payout-audit-r86wJKwFoc8ZVhQX"
 		},
 		{
-			"id": "NY6ZPb5eeTWGCglM",
-			"name": "Blocker demo",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/blocker-demo-NY6ZPb5eeTWGCglM"
-		},
-		{
-			"id": "WJd1WHymUGkCXnI6",
-			"name": "Shared credential",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/shared-credential-WJd1WHymUGkCXnI6"
+			"id": "4tvvOg1f3grit9TH",
+			"name": "Payout export",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/folders/payouts-YsagmLpnqdWqhvTr/workflows/payout-export-4tvvOg1f3grit9TH"
 		},
 		{
 			"id": "8dpyAyhzRSiGkwm2",
@@ -30,19 +30,29 @@
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/archive-me-8dpyAyhzRSiGkwm2"
 		},
 		{
+			"id": "NY6ZPb5eeTWGCglM",
+			"name": "Blocker demo",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/blocker-demo-NY6ZPb5eeTWGCglM"
+		},
+		{
 			"id": "WgzReHzsaL3Il1Mm",
 			"name": "Delete me",
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/delete-me-WgzReHzsaL3Il1Mm"
 		},
 		{
+			"id": "6pEOP3fSgzMBMFAU",
+			"name": "Normalize invoice",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/normalize-invoice-6pEOP3fSgzMBMFAU"
+		},
+		{
+			"id": "WJd1WHymUGkCXnI6",
+			"name": "Shared credential",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/shared-credential-WJd1WHymUGkCXnI6"
+		},
+		{
 			"id": "iFUJRXPKlJzcQ1Rl",
 			"name": "Weekly KPI summary",
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/weekly-kpi-summary-iFUJRXPKlJzcQ1Rl"
-		},
-		{
-			"id": "14lqkKd6r3Gflsoo",
-			"name": "Move me",
-			"target": "projects/other-team-AJpnCLiggWvEgZXR/workflows/move-me-14lqkKd6r3Gflsoo"
 		}
 	],
 	"folders": [
@@ -55,18 +65,23 @@
 			"id": "SmCHm8zRwUKdAbjx",
 			"name": "Operations",
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/folders/operations-SmCHm8zRwUKdAbjx"
+		},
+		{
+			"id": "YsagmLpnqdWqhvTr",
+			"name": "Payouts",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/folders/payouts-YsagmLpnqdWqhvTr"
 		}
 	],
 	"projects": [
 		{
-			"id": "xPnKrfkorgDzHkMM",
-			"name": "Promotion demo",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM"
-		},
-		{
 			"id": "AJpnCLiggWvEgZXR",
 			"name": "Other team",
 			"target": "projects/other-team-AJpnCLiggWvEgZXR"
+		},
+		{
+			"id": "xPnKrfkorgDzHkMM",
+			"name": "Promotion demo",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM"
 		}
 	],
 	"credentials": [
@@ -74,6 +89,16 @@
 			"id": "8yIgILsFpt47NORe",
 			"name": "Billing API",
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/billing-api-8yIgILsFpt47NORe"
+		},
+		{
+			"id": "eP3JUP12Ym3xuPu3",
+			"name": "KPI API",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/kpi-api-eP3JUP12Ym3xuPu3"
+		},
+		{
+			"id": "j5SculHJJUnQF9cH",
+			"name": "Payouts API",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/payouts-api-j5SculHJJUnQF9cH"
 		},
 		{
 			"id": "cFEBGx3Sm8O4IRII",
@@ -84,11 +109,6 @@
 			"id": "7SzG6gGA8sE0Kh6M",
 			"name": "Shared API",
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/shared-api-7SzG6gGA8sE0Kh6M"
-		},
-		{
-			"id": "eP3JUP12Ym3xuPu3",
-			"name": "KPI API",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/kpi-api-eP3JUP12Ym3xuPu3"
 		}
 	],
 	"dataTables": [
@@ -96,6 +116,11 @@
 			"id": "ck54R0VzjKE9C1kz",
 			"name": "invoices",
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/data-tables/invoices-ck54R0VzjKE9C1kz"
+		},
+		{
+			"id": "791xmtV2o2dPu9EW",
+			"name": "payouts",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/data-tables/payouts-791xmtV2o2dPu9EW"
 		}
 	],
 	"variables": [
@@ -113,6 +138,11 @@
 			"id": "kTAIBFHK0LRaXV81",
 			"name": "LOCALE",
 			"target": "variables/locale-kTAIBFHK0LRaXV81"
+		},
+		{
+			"id": "ZEfi7D1asqPABTCX",
+			"name": "PAYOUT_CURRENCY",
+			"target": "variables/payoutcurrency-ZEfi7D1asqPABTCX"
 		}
 	],
 	"tags": [
@@ -120,6 +150,11 @@
 			"id": "HEmDRAIxQ1EDhDWX",
 			"name": "finance",
 			"target": "tags/finance-HEmDRAIxQ1EDhDWX"
+		},
+		{
+			"id": "FnQFaZMItqCCVu3e",
+			"name": "payouts",
+			"target": "tags/payouts-FnQFaZMItqCCVu3e"
 		},
 		{
 			"id": "cN8lCLsHSOo8sPHZ",
@@ -177,6 +212,21 @@
 						"id": "iFUJRXPKlJzcQ1Rl"
 					}
 				]
+			},
+			{
+				"id": "j5SculHJJUnQF9cH",
+				"name": "Payouts API",
+				"type": "httpHeaderAuth",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "4tvvOg1f3grit9TH"
+					},
+					{
+						"kind": "workflow",
+						"id": "r86wJKwFoc8ZVhQX"
+					}
+				]
 			}
 		],
 		"dataTables": [
@@ -187,6 +237,16 @@
 					{
 						"kind": "workflow",
 						"id": "0YL553VNheUfpnxq"
+					}
+				]
+			},
+			{
+				"id": "791xmtV2o2dPu9EW",
+				"name": "payouts",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "4tvvOg1f3grit9TH"
 					}
 				]
 			}
@@ -230,6 +290,19 @@
 						"id": "iFUJRXPKlJzcQ1Rl"
 					}
 				]
+			},
+			{
+				"name": "PAYOUT_CURRENCY",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "4tvvOg1f3grit9TH"
+					},
+					{
+						"kind": "workflow",
+						"id": "r86wJKwFoc8ZVhQX"
+					}
+				]
 			}
 		],
 		"tags": [
@@ -262,6 +335,16 @@
 						"id": "iFUJRXPKlJzcQ1Rl"
 					}
 				]
+			},
+			{
+				"id": "FnQFaZMItqCCVu3e",
+				"name": "payouts",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "4tvvOg1f3grit9TH"
+					}
+				]
 			}
 		],
 		"nodeTypes": [
@@ -275,15 +358,23 @@
 					},
 					{
 						"kind": "workflow",
+						"id": "14lqkKd6r3Gflsoo"
+					},
+					{
+						"kind": "workflow",
+						"id": "4tvvOg1f3grit9TH"
+					},
+					{
+						"kind": "workflow",
+						"id": "8dpyAyhzRSiGkwm2"
+					},
+					{
+						"kind": "workflow",
 						"id": "NY6ZPb5eeTWGCglM"
 					},
 					{
 						"kind": "workflow",
 						"id": "WJd1WHymUGkCXnI6"
-					},
-					{
-						"kind": "workflow",
-						"id": "8dpyAyhzRSiGkwm2"
 					},
 					{
 						"kind": "workflow",
@@ -295,7 +386,7 @@
 					},
 					{
 						"kind": "workflow",
-						"id": "14lqkKd6r3Gflsoo"
+						"id": "r86wJKwFoc8ZVhQX"
 					}
 				]
 			},
@@ -309,6 +400,10 @@
 					},
 					{
 						"kind": "workflow",
+						"id": "4tvvOg1f3grit9TH"
+					},
+					{
+						"kind": "workflow",
 						"id": "NY6ZPb5eeTWGCglM"
 					},
 					{
@@ -318,6 +413,10 @@
 					{
 						"kind": "workflow",
 						"id": "iFUJRXPKlJzcQ1Rl"
+					},
+					{
+						"kind": "workflow",
+						"id": "r86wJKwFoc8ZVhQX"
 					}
 				]
 			},
@@ -328,6 +427,10 @@
 					{
 						"kind": "workflow",
 						"id": "0YL553VNheUfpnxq"
+					},
+					{
+						"kind": "workflow",
+						"id": "4tvvOg1f3grit9TH"
 					}
 				]
 			},

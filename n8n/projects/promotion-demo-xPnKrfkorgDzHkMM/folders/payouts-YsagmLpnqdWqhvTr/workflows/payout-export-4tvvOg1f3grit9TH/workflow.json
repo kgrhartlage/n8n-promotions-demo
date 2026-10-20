@@ -1,0 +1,92 @@
+{
+	"id": "4tvvOg1f3grit9TH",
+	"name": "Payout export",
+	"nodes": [
+		{
+			"id": "6b6c4542-24dd-449a-be8f-c0337f3faf25",
+			"name": "Manual Trigger",
+			"type": "n8n-nodes-base.manualTrigger",
+			"typeVersion": 1,
+			"position": [
+				-240,
+				16
+			],
+			"parameters": {}
+		},
+		{
+			"id": "26fd80ba-0c91-4547-8f70-47746abafba5",
+			"name": "Fetch payouts",
+			"type": "n8n-nodes-base.httpRequest",
+			"typeVersion": 4.2,
+			"position": [
+				0,
+				16
+			],
+			"parameters": {
+				"url": "=https://example.com/payouts?currency={{ $vars.PAYOUT_CURRENCY }}",
+				"authentication": "genericCredentialType",
+				"genericAuthType": "httpHeaderAuth",
+				"options": {}
+			},
+			"credentials": {
+				"httpHeaderAuth": {
+					"id": "j5SculHJJUnQF9cH",
+					"name": "Payouts API"
+				}
+			}
+		},
+		{
+			"id": "de603a39-0032-437d-94ea-6a602634bbc0",
+			"name": "Read payouts",
+			"type": "n8n-nodes-base.dataTable",
+			"typeVersion": 1,
+			"position": [
+				240,
+				16
+			],
+			"parameters": {
+				"operation": "get",
+				"dataTableId": {
+					"__rl": true,
+					"value": "791xmtV2o2dPu9EW",
+					"mode": "list",
+					"cachedResultName": "payouts"
+				},
+				"returnAll": true
+			}
+		}
+	],
+	"connections": {
+		"Manual Trigger": {
+			"main": [
+				[
+					{
+						"node": "Fetch payouts",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		},
+		"Fetch payouts": {
+			"main": [
+				[
+					{
+						"node": "Read payouts",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		}
+	},
+	"settings": {
+		"executionOrder": "v1",
+		"binaryMode": "separate"
+	},
+	"parentFolderId": "YsagmLpnqdWqhvTr",
+	"isArchived": false,
+	"tagIds": [
+		"FnQFaZMItqCCVu3e"
+	]
+}

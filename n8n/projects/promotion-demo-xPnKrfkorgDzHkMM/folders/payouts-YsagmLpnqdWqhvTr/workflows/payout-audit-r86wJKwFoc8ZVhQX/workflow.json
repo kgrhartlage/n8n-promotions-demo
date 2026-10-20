@@ -1,0 +1,59 @@
+{
+	"id": "r86wJKwFoc8ZVhQX",
+	"name": "Payout audit",
+	"nodes": [
+		{
+			"id": "e795bb01-40e5-4c72-9e5d-8c71e9ecbe72",
+			"name": "Manual Trigger",
+			"type": "n8n-nodes-base.manualTrigger",
+			"typeVersion": 1,
+			"position": [
+				-112,
+				16
+			],
+			"parameters": {}
+		},
+		{
+			"id": "0e070842-0360-48b3-a6ff-0dfb208cb350",
+			"name": "Fetch payouts",
+			"type": "n8n-nodes-base.httpRequest",
+			"typeVersion": 4.2,
+			"position": [
+				128,
+				16
+			],
+			"parameters": {
+				"url": "=https://example.com/payouts?currency={{ $vars.PAYOUT_CURRENCY }}",
+				"authentication": "genericCredentialType",
+				"genericAuthType": "httpHeaderAuth",
+				"options": {}
+			},
+			"credentials": {
+				"httpHeaderAuth": {
+					"id": "j5SculHJJUnQF9cH",
+					"name": "Payouts API"
+				}
+			}
+		}
+	],
+	"connections": {
+		"Manual Trigger": {
+			"main": [
+				[
+					{
+						"node": "Fetch payouts",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		}
+	},
+	"settings": {
+		"executionOrder": "v1",
+		"binaryMode": "separate"
+	},
+	"parentFolderId": "YsagmLpnqdWqhvTr",
+	"isArchived": false,
+	"tagIds": []
+}

@@ -1,0 +1,12 @@
+{
+	"id": "791xmtV2o2dPu9EW",
+	"name": "payouts",
+	"columns": [
+		{
+			"id": "rEPd6aCXT2Lnul0Z",
+			"name": "amount",
+			"type": "number",
+			"index": 0
+		}
+	]
+}

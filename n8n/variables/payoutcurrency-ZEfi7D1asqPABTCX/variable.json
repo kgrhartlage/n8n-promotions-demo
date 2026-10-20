@@ -1,0 +1,5 @@
+{
+	"name": "PAYOUT_CURRENCY",
+	"type": "string",
+	"value": "EUR"
+}
