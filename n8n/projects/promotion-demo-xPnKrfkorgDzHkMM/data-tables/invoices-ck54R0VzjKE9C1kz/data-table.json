@@ -10,9 +10,15 @@
 		},
 		{
 			"id": "BGbyYS9U9VydGAQG",
-			"name": "notes",
+			"name": "memo",
 			"type": "string",
 			"index": 1
+		},
+		{
+			"id": "yoCgFppfgRbP6VrA",
+			"name": "due_date",
+			"type": "date",
+			"index": 2
 		}
 	]
 }

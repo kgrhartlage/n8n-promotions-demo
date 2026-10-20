@@ -23,7 +23,7 @@
 				16
 			],
 			"parameters": {
-				"url": "=https://example.com/invoices?region={{ $vars.REGION }}",
+				"url": "=https://example.com/invoices?region={{ $vars.REGION }}&promotion={{ $vars.PROMO_REGION }}&version=2",
 				"authentication": "genericCredentialType",
 				"genericAuthType": "httpHeaderAuth",
 				"options": {}

@@ -1,6 +1,6 @@
 {
 	"id": "iFUJRXPKlJzcQ1Rl",
-	"name": "Weekly KPI report",
+	"name": "Weekly KPI summary",
 	"nodes": [
 		{
 			"id": "58bcdca9-304d-42cc-9d3a-ebbdd175c824",
@@ -56,6 +56,7 @@
 	"parentFolderId": null,
 	"isArchived": false,
 	"tagIds": [
-		"cN8lCLsHSOo8sPHZ"
+		"cN8lCLsHSOo8sPHZ",
+		"056pFMmxuLupH6wm"
 	]
 }

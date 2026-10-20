@@ -12,6 +12,28 @@
 				16
 			],
 			"parameters": {}
+		},
+		{
+			"id": "0d1c583a-480a-41fc-901a-fe0bb59c23f3",
+			"name": "Fetch reporting data",
+			"type": "n8n-nodes-base.httpRequest",
+			"typeVersion": 4.2,
+			"position": [
+				160,
+				160
+			],
+			"parameters": {
+				"url": "https://example.com/reporting",
+				"authentication": "genericCredentialType",
+				"genericAuthType": "httpHeaderAuth",
+				"options": {}
+			},
+			"credentials": {
+				"httpHeaderAuth": {
+					"id": "cFEBGx3Sm8O4IRII",
+					"name": "Reporting API"
+				}
+			}
 		}
 	],
 	"connections": {},

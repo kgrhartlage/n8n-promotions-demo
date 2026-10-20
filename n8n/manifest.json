@@ -1,6 +1,6 @@
 {
 	"packageFormatVersion": "1",
-	"exportedAt": "2026-10-20T08:42:10.210Z",
+	"exportedAt": "2026-10-20T08:51:06.134Z",
 	"sourceN8nVersion": "2.44.0",
 	"sourceId": "0b5cc27b60389d2bf8c53ebeacff83a3ac0c80b5fb13f8934a59d5aea5665f03",
 	"workflows": [
@@ -10,9 +10,9 @@
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/folders/billing-3REU6mYE8CC0a5ch/workflows/invoice-reconciliation-0YL553VNheUfpnxq"
 		},
 		{
-			"id": "6pEOP3fSgzMBMFAU",
-			"name": "Normalize invoice",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/normalize-invoice-6pEOP3fSgzMBMFAU"
+			"id": "8dpyAyhzRSiGkwm2",
+			"name": "Archive me",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/archive-me-8dpyAyhzRSiGkwm2"
 		},
 		{
 			"id": "NY6ZPb5eeTWGCglM",
@@ -20,9 +20,9 @@
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/blocker-demo-NY6ZPb5eeTWGCglM"
 		},
 		{
-			"id": "WJd1WHymUGkCXnI6",
-			"name": "Shared credential",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/shared-credential-WJd1WHymUGkCXnI6"
+			"id": "WgzReHzsaL3Il1Mm",
+			"name": "Delete me",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/delete-me-WgzReHzsaL3Il1Mm"
 		},
 		{
 			"id": "14lqkKd6r3Gflsoo",
@@ -30,19 +30,19 @@
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/move-me-14lqkKd6r3Gflsoo"
 		},
 		{
-			"id": "8dpyAyhzRSiGkwm2",
-			"name": "Archive me",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/archive-me-8dpyAyhzRSiGkwm2"
+			"id": "6pEOP3fSgzMBMFAU",
+			"name": "Normalize invoice",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/normalize-invoice-6pEOP3fSgzMBMFAU"
 		},
 		{
-			"id": "WgzReHzsaL3Il1Mm",
-			"name": "Delete me",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/delete-me-WgzReHzsaL3Il1Mm"
+			"id": "WJd1WHymUGkCXnI6",
+			"name": "Shared credential",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/shared-credential-WJd1WHymUGkCXnI6"
 		},
 		{
 			"id": "iFUJRXPKlJzcQ1Rl",
-			"name": "Weekly KPI report",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/weekly-kpi-report-iFUJRXPKlJzcQ1Rl"
+			"name": "Weekly KPI summary",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/weekly-kpi-summary-iFUJRXPKlJzcQ1Rl"
 		}
 	],
 	"folders": [
@@ -71,14 +71,19 @@
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/billing-api-8yIgILsFpt47NORe"
 		},
 		{
-			"id": "7SzG6gGA8sE0Kh6M",
-			"name": "Shared API",
-			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/shared-api-7SzG6gGA8sE0Kh6M"
-		},
-		{
 			"id": "eP3JUP12Ym3xuPu3",
 			"name": "KPI API",
 			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/kpi-api-eP3JUP12Ym3xuPu3"
+		},
+		{
+			"id": "cFEBGx3Sm8O4IRII",
+			"name": "Reporting API",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/reporting-api-cFEBGx3Sm8O4IRII"
+		},
+		{
+			"id": "7SzG6gGA8sE0Kh6M",
+			"name": "Shared API",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/shared-api-7SzG6gGA8sE0Kh6M"
 		}
 	],
 	"dataTables": [
@@ -98,6 +103,11 @@
 			"id": "kTAIBFHK0LRaXV81",
 			"name": "LOCALE",
 			"target": "variables/locale-kTAIBFHK0LRaXV81"
+		},
+		{
+			"id": "8SSQneOENAaa4uPy",
+			"name": "PROMO_REGION",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/variables/promoregion-8SSQneOENAaa4uPy"
 		}
 	],
 	"tags": [
@@ -110,10 +120,26 @@
 			"id": "cN8lCLsHSOo8sPHZ",
 			"name": "prod",
 			"target": "tags/prod-cN8lCLsHSOo8sPHZ"
+		},
+		{
+			"id": "056pFMmxuLupH6wm",
+			"name": "release",
+			"target": "tags/release-056pFMmxuLupH6wm"
 		}
 	],
 	"requirements": {
 		"credentials": [
+			{
+				"id": "7SzG6gGA8sE0Kh6M",
+				"name": "Shared API",
+				"type": "httpHeaderAuth",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "WJd1WHymUGkCXnI6"
+					}
+				]
+			},
 			{
 				"id": "8yIgILsFpt47NORe",
 				"name": "Billing API",
@@ -126,13 +152,13 @@
 				]
 			},
 			{
-				"id": "7SzG6gGA8sE0Kh6M",
-				"name": "Shared API",
+				"id": "cFEBGx3Sm8O4IRII",
+				"name": "Reporting API",
 				"type": "httpHeaderAuth",
 				"usedBy": [
 					{
 						"kind": "workflow",
-						"id": "WJd1WHymUGkCXnI6"
+						"id": "NY6ZPb5eeTWGCglM"
 					}
 				]
 			},
@@ -183,6 +209,15 @@
 				]
 			},
 			{
+				"name": "PROMO_REGION",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					}
+				]
+			},
+			{
 				"name": "LOCALE",
 				"usedBy": [
 					{
@@ -212,6 +247,16 @@
 						"id": "iFUJRXPKlJzcQ1Rl"
 					}
 				]
+			},
+			{
+				"id": "056pFMmxuLupH6wm",
+				"name": "release",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "iFUJRXPKlJzcQ1Rl"
+					}
+				]
 			}
 		],
 		"nodeTypes": [
@@ -225,19 +270,19 @@
 					},
 					{
 						"kind": "workflow",
-						"id": "NY6ZPb5eeTWGCglM"
-					},
-					{
-						"kind": "workflow",
-						"id": "WJd1WHymUGkCXnI6"
-					},
-					{
-						"kind": "workflow",
 						"id": "14lqkKd6r3Gflsoo"
 					},
 					{
 						"kind": "workflow",
 						"id": "8dpyAyhzRSiGkwm2"
+					},
+					{
+						"kind": "workflow",
+						"id": "NY6ZPb5eeTWGCglM"
+					},
+					{
+						"kind": "workflow",
+						"id": "WJd1WHymUGkCXnI6"
 					},
 					{
 						"kind": "workflow",
@@ -256,6 +301,10 @@
 					{
 						"kind": "workflow",
 						"id": "0YL553VNheUfpnxq"
+					},
+					{
+						"kind": "workflow",
+						"id": "NY6ZPb5eeTWGCglM"
 					},
 					{
 						"kind": "workflow",
