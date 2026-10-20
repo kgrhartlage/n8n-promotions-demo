@@ -23,7 +23,7 @@
 				16
 			],
 			"parameters": {
-				"url": "https://example.com/demo",
+				"url": "https://example.com/demo?version=2",
 				"authentication": "genericCredentialType",
 				"genericAuthType": "httpHeaderAuth",
 				"options": {}
