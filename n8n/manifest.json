@@ -1,0 +1,302 @@
+{
+	"packageFormatVersion": "1",
+	"exportedAt": "2026-10-20T08:42:10.210Z",
+	"sourceN8nVersion": "2.44.0",
+	"sourceId": "0b5cc27b60389d2bf8c53ebeacff83a3ac0c80b5fb13f8934a59d5aea5665f03",
+	"workflows": [
+		{
+			"id": "0YL553VNheUfpnxq",
+			"name": "Invoice reconciliation",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/folders/billing-3REU6mYE8CC0a5ch/workflows/invoice-reconciliation-0YL553VNheUfpnxq"
+		},
+		{
+			"id": "6pEOP3fSgzMBMFAU",
+			"name": "Normalize invoice",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/normalize-invoice-6pEOP3fSgzMBMFAU"
+		},
+		{
+			"id": "NY6ZPb5eeTWGCglM",
+			"name": "Blocker demo",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/blocker-demo-NY6ZPb5eeTWGCglM"
+		},
+		{
+			"id": "WJd1WHymUGkCXnI6",
+			"name": "Shared credential",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/shared-credential-WJd1WHymUGkCXnI6"
+		},
+		{
+			"id": "14lqkKd6r3Gflsoo",
+			"name": "Move me",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/move-me-14lqkKd6r3Gflsoo"
+		},
+		{
+			"id": "8dpyAyhzRSiGkwm2",
+			"name": "Archive me",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/archive-me-8dpyAyhzRSiGkwm2"
+		},
+		{
+			"id": "WgzReHzsaL3Il1Mm",
+			"name": "Delete me",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/delete-me-WgzReHzsaL3Il1Mm"
+		},
+		{
+			"id": "iFUJRXPKlJzcQ1Rl",
+			"name": "Weekly KPI report",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/workflows/weekly-kpi-report-iFUJRXPKlJzcQ1Rl"
+		}
+	],
+	"folders": [
+		{
+			"id": "3REU6mYE8CC0a5ch",
+			"name": "Billing",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/folders/billing-3REU6mYE8CC0a5ch"
+		},
+		{
+			"id": "SmCHm8zRwUKdAbjx",
+			"name": "Operations",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/folders/operations-SmCHm8zRwUKdAbjx"
+		}
+	],
+	"projects": [
+		{
+			"id": "xPnKrfkorgDzHkMM",
+			"name": "Promotion demo",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM"
+		}
+	],
+	"credentials": [
+		{
+			"id": "8yIgILsFpt47NORe",
+			"name": "Billing API",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/billing-api-8yIgILsFpt47NORe"
+		},
+		{
+			"id": "7SzG6gGA8sE0Kh6M",
+			"name": "Shared API",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/shared-api-7SzG6gGA8sE0Kh6M"
+		},
+		{
+			"id": "eP3JUP12Ym3xuPu3",
+			"name": "KPI API",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/credentials/kpi-api-eP3JUP12Ym3xuPu3"
+		}
+	],
+	"dataTables": [
+		{
+			"id": "ck54R0VzjKE9C1kz",
+			"name": "invoices",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/data-tables/invoices-ck54R0VzjKE9C1kz"
+		}
+	],
+	"variables": [
+		{
+			"id": "Rgk9yoA34z1cDV2B",
+			"name": "REGION",
+			"target": "projects/promotion-demo-xPnKrfkorgDzHkMM/variables/region-Rgk9yoA34z1cDV2B"
+		},
+		{
+			"id": "kTAIBFHK0LRaXV81",
+			"name": "LOCALE",
+			"target": "variables/locale-kTAIBFHK0LRaXV81"
+		}
+	],
+	"tags": [
+		{
+			"id": "HEmDRAIxQ1EDhDWX",
+			"name": "finance",
+			"target": "tags/finance-HEmDRAIxQ1EDhDWX"
+		},
+		{
+			"id": "cN8lCLsHSOo8sPHZ",
+			"name": "prod",
+			"target": "tags/prod-cN8lCLsHSOo8sPHZ"
+		}
+	],
+	"requirements": {
+		"credentials": [
+			{
+				"id": "8yIgILsFpt47NORe",
+				"name": "Billing API",
+				"type": "httpHeaderAuth",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					}
+				]
+			},
+			{
+				"id": "7SzG6gGA8sE0Kh6M",
+				"name": "Shared API",
+				"type": "httpHeaderAuth",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "WJd1WHymUGkCXnI6"
+					}
+				]
+			},
+			{
+				"id": "eP3JUP12Ym3xuPu3",
+				"name": "KPI API",
+				"type": "httpHeaderAuth",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "iFUJRXPKlJzcQ1Rl"
+					}
+				]
+			}
+		],
+		"dataTables": [
+			{
+				"id": "ck54R0VzjKE9C1kz",
+				"name": "invoices",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					}
+				]
+			}
+		],
+		"workflows": [
+			{
+				"id": "6pEOP3fSgzMBMFAU",
+				"name": "Normalize invoice",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					}
+				]
+			}
+		],
+		"variables": [
+			{
+				"name": "REGION",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					}
+				]
+			},
+			{
+				"name": "LOCALE",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "iFUJRXPKlJzcQ1Rl"
+					}
+				]
+			}
+		],
+		"tags": [
+			{
+				"id": "HEmDRAIxQ1EDhDWX",
+				"name": "finance",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					}
+				]
+			},
+			{
+				"id": "cN8lCLsHSOo8sPHZ",
+				"name": "prod",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "iFUJRXPKlJzcQ1Rl"
+					}
+				]
+			}
+		],
+		"nodeTypes": [
+			{
+				"type": "n8n-nodes-base.manualTrigger",
+				"typeVersion": 1,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					},
+					{
+						"kind": "workflow",
+						"id": "NY6ZPb5eeTWGCglM"
+					},
+					{
+						"kind": "workflow",
+						"id": "WJd1WHymUGkCXnI6"
+					},
+					{
+						"kind": "workflow",
+						"id": "14lqkKd6r3Gflsoo"
+					},
+					{
+						"kind": "workflow",
+						"id": "8dpyAyhzRSiGkwm2"
+					},
+					{
+						"kind": "workflow",
+						"id": "WgzReHzsaL3Il1Mm"
+					},
+					{
+						"kind": "workflow",
+						"id": "iFUJRXPKlJzcQ1Rl"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.httpRequest",
+				"typeVersion": 4.2,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					},
+					{
+						"kind": "workflow",
+						"id": "WJd1WHymUGkCXnI6"
+					},
+					{
+						"kind": "workflow",
+						"id": "iFUJRXPKlJzcQ1Rl"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.dataTable",
+				"typeVersion": 1,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.executeWorkflow",
+				"typeVersion": 1.3,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "0YL553VNheUfpnxq"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.executeWorkflowTrigger",
+				"typeVersion": 1.1,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "6pEOP3fSgzMBMFAU"
+					}
+				]
+			}
+		]
+	}
+}

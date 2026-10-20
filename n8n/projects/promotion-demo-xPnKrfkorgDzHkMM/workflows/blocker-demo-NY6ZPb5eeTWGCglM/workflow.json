@@ -1,0 +1,25 @@
+{
+	"id": "NY6ZPb5eeTWGCglM",
+	"name": "Blocker demo",
+	"nodes": [
+		{
+			"id": "9711f8c4-462b-4325-ae76-7053bf29c58f",
+			"name": "Manual Trigger",
+			"type": "n8n-nodes-base.manualTrigger",
+			"typeVersion": 1,
+			"position": [
+				16,
+				16
+			],
+			"parameters": {}
+		}
+	],
+	"connections": {},
+	"settings": {
+		"executionOrder": "v1",
+		"binaryMode": "separate"
+	},
+	"parentFolderId": null,
+	"isArchived": false,
+	"tagIds": []
+}

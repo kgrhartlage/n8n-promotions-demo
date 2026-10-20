@@ -1,0 +1,25 @@
+{
+	"id": "WgzReHzsaL3Il1Mm",
+	"name": "Delete me",
+	"nodes": [
+		{
+			"id": "85ad495a-5dc8-433b-8a11-7d84c51eb864",
+			"name": "Manual Trigger",
+			"type": "n8n-nodes-base.manualTrigger",
+			"typeVersion": 1,
+			"position": [
+				16,
+				16
+			],
+			"parameters": {}
+		}
+	],
+	"connections": {},
+	"settings": {
+		"executionOrder": "v1",
+		"binaryMode": "separate"
+	},
+	"parentFolderId": null,
+	"isArchived": false,
+	"tagIds": []
+}

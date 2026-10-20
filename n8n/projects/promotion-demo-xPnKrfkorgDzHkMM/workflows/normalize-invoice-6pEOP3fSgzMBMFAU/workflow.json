@@ -1,0 +1,27 @@
+{
+	"id": "6pEOP3fSgzMBMFAU",
+	"name": "Normalize invoice",
+	"nodes": [
+		{
+			"id": "9e50c736-d5ad-496e-9e78-78ce6b22fd48",
+			"name": "When Executed by Another Workflow",
+			"type": "n8n-nodes-base.executeWorkflowTrigger",
+			"typeVersion": 1.1,
+			"position": [
+				16,
+				16
+			],
+			"parameters": {
+				"inputSource": "passthrough"
+			}
+		}
+	],
+	"connections": {},
+	"settings": {
+		"executionOrder": "v1",
+		"binaryMode": "separate"
+	},
+	"parentFolderId": null,
+	"isArchived": false,
+	"tagIds": []
+}

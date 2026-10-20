@@ -1,0 +1,122 @@
+{
+	"id": "0YL553VNheUfpnxq",
+	"name": "Invoice reconciliation",
+	"nodes": [
+		{
+			"id": "e306e0e4-75ca-4312-a961-abdd5dab3093",
+			"name": "Manual Trigger",
+			"type": "n8n-nodes-base.manualTrigger",
+			"typeVersion": 1,
+			"position": [
+				-352,
+				16
+			],
+			"parameters": {}
+		},
+		{
+			"id": "33559028-a89c-4e3c-a48c-e565c8e5dbe7",
+			"name": "Fetch invoices",
+			"type": "n8n-nodes-base.httpRequest",
+			"typeVersion": 4.2,
+			"position": [
+				-112,
+				16
+			],
+			"parameters": {
+				"url": "=https://example.com/invoices?region={{ $vars.REGION }}",
+				"authentication": "genericCredentialType",
+				"genericAuthType": "httpHeaderAuth",
+				"options": {}
+			},
+			"credentials": {
+				"httpHeaderAuth": {
+					"id": "8yIgILsFpt47NORe",
+					"name": "Billing API"
+				}
+			}
+		},
+		{
+			"id": "9801a638-1443-4506-96cb-dc425558ea68",
+			"name": "Read invoices",
+			"type": "n8n-nodes-base.dataTable",
+			"typeVersion": 1,
+			"position": [
+				128,
+				16
+			],
+			"parameters": {
+				"operation": "get",
+				"dataTableId": {
+					"__rl": true,
+					"value": "ck54R0VzjKE9C1kz",
+					"mode": "list",
+					"cachedResultName": "invoices"
+				},
+				"returnAll": true
+			}
+		},
+		{
+			"id": "7cfc3c2e-8126-42d0-a67d-da77b2523df2",
+			"name": "Normalize invoice",
+			"type": "n8n-nodes-base.executeWorkflow",
+			"typeVersion": 1.3,
+			"position": [
+				368,
+				16
+			],
+			"parameters": {
+				"workflowId": {
+					"__rl": true,
+					"value": "6pEOP3fSgzMBMFAU",
+					"mode": "list",
+					"cachedResultName": "Normalize invoice"
+				},
+				"options": {}
+			}
+		}
+	],
+	"connections": {
+		"Manual Trigger": {
+			"main": [
+				[
+					{
+						"node": "Fetch invoices",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		},
+		"Fetch invoices": {
+			"main": [
+				[
+					{
+						"node": "Read invoices",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		},
+		"Read invoices": {
+			"main": [
+				[
+					{
+						"node": "Normalize invoice",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		}
+	},
+	"settings": {
+		"executionOrder": "v1",
+		"binaryMode": "separate"
+	},
+	"parentFolderId": "3REU6mYE8CC0a5ch",
+	"isArchived": false,
+	"tagIds": [
+		"HEmDRAIxQ1EDhDWX"
+	]
+}

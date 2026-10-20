@@ -1,0 +1,59 @@
+{
+	"id": "WJd1WHymUGkCXnI6",
+	"name": "Shared credential",
+	"nodes": [
+		{
+			"id": "1a410f55-197b-4079-a0a9-44b75c7a3063",
+			"name": "Manual Trigger",
+			"type": "n8n-nodes-base.manualTrigger",
+			"typeVersion": 1,
+			"position": [
+				-112,
+				16
+			],
+			"parameters": {}
+		},
+		{
+			"id": "23f96273-b62e-4355-b5bd-047181cc6d3b",
+			"name": "Fetch shared data",
+			"type": "n8n-nodes-base.httpRequest",
+			"typeVersion": 4.2,
+			"position": [
+				128,
+				16
+			],
+			"parameters": {
+				"url": "https://example.com/demo",
+				"authentication": "genericCredentialType",
+				"genericAuthType": "httpHeaderAuth",
+				"options": {}
+			},
+			"credentials": {
+				"httpHeaderAuth": {
+					"id": "7SzG6gGA8sE0Kh6M",
+					"name": "Shared API"
+				}
+			}
+		}
+	],
+	"connections": {
+		"Manual Trigger": {
+			"main": [
+				[
+					{
+						"node": "Fetch shared data",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		}
+	},
+	"settings": {
+		"executionOrder": "v1",
+		"binaryMode": "separate"
+	},
+	"parentFolderId": null,
+	"isArchived": false,
+	"tagIds": []
+}

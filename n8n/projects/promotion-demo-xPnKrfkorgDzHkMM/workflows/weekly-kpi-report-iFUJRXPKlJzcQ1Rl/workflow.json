@@ -1,0 +1,61 @@
+{
+	"id": "iFUJRXPKlJzcQ1Rl",
+	"name": "Weekly KPI report",
+	"nodes": [
+		{
+			"id": "58bcdca9-304d-42cc-9d3a-ebbdd175c824",
+			"name": "Manual Trigger",
+			"type": "n8n-nodes-base.manualTrigger",
+			"typeVersion": 1,
+			"position": [
+				-112,
+				16
+			],
+			"parameters": {}
+		},
+		{
+			"id": "15d93577-957f-448e-abf9-e2330dc66843",
+			"name": "Fetch KPI data",
+			"type": "n8n-nodes-base.httpRequest",
+			"typeVersion": 4.2,
+			"position": [
+				128,
+				16
+			],
+			"parameters": {
+				"url": "=https://example.com/kpi?locale={{ $vars.LOCALE }}",
+				"authentication": "genericCredentialType",
+				"genericAuthType": "httpHeaderAuth",
+				"options": {}
+			},
+			"credentials": {
+				"httpHeaderAuth": {
+					"id": "eP3JUP12Ym3xuPu3",
+					"name": "KPI API"
+				}
+			}
+		}
+	],
+	"connections": {
+		"Manual Trigger": {
+			"main": [
+				[
+					{
+						"node": "Fetch KPI data",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		}
+	},
+	"settings": {
+		"executionOrder": "v1",
+		"binaryMode": "separate"
+	},
+	"parentFolderId": null,
+	"isArchived": false,
+	"tagIds": [
+		"cN8lCLsHSOo8sPHZ"
+	]
+}

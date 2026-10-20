@@ -1,0 +1,18 @@
+{
+	"id": "ck54R0VzjKE9C1kz",
+	"name": "invoices",
+	"columns": [
+		{
+			"id": "3E8GLG1Ip7vkWgZa",
+			"name": "amount",
+			"type": "number",
+			"index": 0
+		},
+		{
+			"id": "BGbyYS9U9VydGAQG",
+			"name": "notes",
+			"type": "string",
+			"index": 1
+		}
+	]
+}
